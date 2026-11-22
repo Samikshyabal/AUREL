@@ -1,0 +1,4 @@
+Model,Accuracy (%),Team CSV (%),Difference,Test loss,Macro F1,Params (learnable),Size (MB),Latency (ms),Smaller than teacher (x)
+Teacher,90.38,90.38,0.0,0.292,0.9036,11173962,44.78,3.239,1.0
+Baseline,81.52,81.52,0.0,0.5372,0.814,188970,0.77,0.587,59.1
+KD,80.88,80.88,0.0,0.59,0.808,188970,0.77,0.596,59.1

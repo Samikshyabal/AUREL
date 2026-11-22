@@ -1,0 +1,18 @@
+<svg viewBox="0 0 1000 265" role="img" aria-label="The teacher supplies soft targets only to the distilled student. Ground-truth labels supervise both students." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="soft" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#91accc"/></marker><marker id="hard" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#b5c49f"/></marker></defs>
+<g fill="#222826" stroke-width="1.5">
+<rect x="2" y="12" width="270" height="96" stroke="#91accb"/><rect x="2" y="158" width="270" height="96" stroke="#626e64"/>
+<rect x="690" y="12" width="306" height="96" stroke="#73b8ac"/><rect x="690" y="158" width="306" height="96" stroke="#b5c49f"/>
+</g>
+<g font-family="system-ui" font-size="17" fill="#b5bdb7">
+<text x="22" y="45">01 / ResNet-18</text><text x="22" y="192">02 / Ground truth</text>
+<text x="712" y="45">03 / StudentCNN · KD</text><text x="712" y="192">04 / StudentCNN · CE</text>
+</g><g font-family="Georgia,serif" font-size="30" fill="#f1eee6">
+<text x="22" y="82">Teacher</text><text x="22" y="230">CIFAR-10 labels</text><text x="712" y="82">Distilled student</text><text x="712" y="230">Baseline student</text>
+</g>
+<path d="M272 53H680" fill="none" stroke="#91accb" stroke-width="2" marker-end="url(#soft)"/>
+<path d="M272 210H680 M470 210V92H680" fill="none" stroke="#b5c49f" stroke-width="2" marker-end="url(#hard)"/>
+<path d="M665 210H680" fill="none" stroke="#b5c49f" stroke-width="2" marker-end="url(#hard)"/>
+<circle cx="470" cy="210" r="4" fill="#b5c49f"/>
+<g font-family="system-ui" font-size="18"><text x="310" y="41" fill="#91accb">Soft targets · T = 4</text><text x="302" y="196" fill="#b5c49f">Hard targets</text><text x="485" y="119" fill="#b5c49f">Label supervision</text></g>
+</svg>

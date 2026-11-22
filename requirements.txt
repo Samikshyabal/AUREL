@@ -1,0 +1,6 @@
+# For NVIDIA inference, install the corresponding CUDA wheels before this file.
+torch==2.11.0
+torchvision==0.26.0
+Pillow>=10,!=8.3.*
+streamlit>=1.55,<2
+plotly>=6.3,<7

@@ -1,0 +1,4 @@
+Model,Test Accuracy (%),Test Loss,Parameters,Inference Latency (ms),Compression Benefit,Teacher Retention (%)
+Teacher (ResNet-18),90.38,0.292,0.00M,3.38,Baseline (1.0x),100.0%
+Student Baseline (StudentCNN),81.52,0.5372,0.189M,0.57,0.0x smaller,90.2%
+Distilled Student (KD),80.88,0.59,0.189M,0.56,0.0x smaller,89.5%

@@ -1,0 +1,31 @@
+:root {--ink:#f1eee6;--ash:#b5bdb7;--line:#3c4541;--teal:#73b8ac}
+[data-testid="stMainBlockContainer"] {max-width:1360px;padding:3.8rem clamp(22px,4vw,64px) 6rem}
+[data-testid="stSidebar"] {border-right:1px solid var(--line)}
+[data-testid="stSidebar"] [role="radiogroup"] {gap:.65rem}
+[data-testid="stSidebar"] label:has(input:checked) p {color:var(--teal);font-weight:650}
+.wordmark {font:normal 2.1rem Georgia,serif;letter-spacing:.12em}
+.identity {max-width:16rem;color:var(--ash);line-height:1.55}
+.folio,.figure-label {font:600 .9rem/1.5 system-ui;letter-spacing:.11em;color:var(--ash)}
+.folio {display:flex;justify-content:space-between;gap:1rem;border-bottom:1px solid var(--line);padding-bottom:1rem}
+[data-testid="stMain"] h1 {font:normal clamp(2.5rem,4.7vw,4rem)/1.07 Georgia,serif;letter-spacing:-.04em;max-width:24ch;margin:.25em 0 .1em}
+[data-testid="stMain"] h2 {font-size:clamp(1.5rem,2.5vw,2rem);letter-spacing:-.035em}
+[data-testid="stMain"] p {font-size:1.05rem;line-height:1.58}
+[data-testid="stCaptionContainer"] p {font-size:.94rem;color:var(--ash)}
+.lead {font:normal 1.2rem/1.55 system-ui;color:var(--ash);max-width:62ch}
+.plate {border-block:1px solid var(--line);background:#1b211f;padding:clamp(16px,2.2vw,34px);margin:.75rem 0}
+.figure-label {color:#b5c49f;margin-bottom:1em}
+.pipeline {display:block;width:100%;height:auto}
+.small-flow {display:none}
+.band {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);align-items:baseline;gap:1rem;padding:1.15rem 0;border-top:1px solid var(--line)}
+.band strong {font:normal 1.55rem Georgia,serif}
+.band span {color:var(--ash);line-height:1.55}
+.prediction {display:grid;grid-template-columns:1.2fr 1fr auto;gap:.6rem;padding:1.15rem 0;border-bottom:1px solid var(--line);align-items:baseline;font-variant-numeric:tabular-nums}
+.prediction strong {font:normal 1.45rem Georgia,serif}
+[data-testid="stFileUploaderDropzone"] {min-height:8rem;border:1px dashed #71857b}
+.insight {border-left:2px solid var(--teal);padding-left:1.25rem;font:normal clamp(1.6rem,3vw,2.5rem)/1.2 Georgia,serif;max-width:32ch}
+@media(max-width:720px){
+  [data-testid="stMainBlockContainer"] {padding:3.7rem 1.2rem 4rem}
+  .folio {font-size:.8rem;letter-spacing:.05em}
+  .band {grid-template-columns:1fr;gap:.35rem}
+  .pipeline {display:none}.small-flow {display:block;line-height:1.65}
+}
